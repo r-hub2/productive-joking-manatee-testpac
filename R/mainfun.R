@@ -10,5 +10,8 @@
 #'
 #' @export
 mainfun=function(dta) {
-  Ecume::classifier_test(dta$x, dta$y)
+  print(Ecume::classifier_test(dta$x, dta$y))
+  print(FR.test(dta$x, dta$y))
+  print(edge.tests(dta$x, dta$y))
+
 }
